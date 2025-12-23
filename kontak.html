@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var n=parseInt(prompt("Unesi broj elemenata niza: "));
+        // var niz=[];
+        // var uk=0;
+        // for (let i = 0; i < n; i++) {
+        //     var element=prompt("Unesi element na poziciji "+i+":");
+        //     niz.push(element);
+        //     uk=uk+element;
+            
+        // }
+        // as=uk/n;
+        // var NoviNiz=[];
+        // for (let index = 0; index < niz.length; index++) {
+        //     var element = niz[index];
+        //     if (element<as){
+        //         NoviNiz.push(element);
+        //     }
+        // }
+        // console.log(NoviNiz);
+        var rijeci=["pas","macka","krava","zaba","pcela"];
+        var pokusaji=10;
+        tocno=0
+        
+            while (pokusaji>0 && tocno<5) {
+            
+            var odg=prompt("Pokušaj pogoditi svih " +rijeci.length+ " rijeci u nizu, imas "+pokusaji+" pokusaja:")
+            for (let i = 0; i < rijeci.length; i++) {
+                if (odg == rijeci[i]){
+                    alert("Tocan odgovor");
+                    tocno++;
+                    rijeci.splice(i,1);
+                }
+                
+                
+            }
+            pokusaji=pokusaji-1;
+        }
+        
+    </script>
+</body>
+</html>
